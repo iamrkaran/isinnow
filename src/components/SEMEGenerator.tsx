@@ -55,10 +55,10 @@ export const SEMEGenerator: React.FC = () => {
   };
 
   const handleGenerate = () => {
-    const year = "2025";
+    
     const time = generateRandomString(4);
     const randomPart = generateRandomString(4);
-    const seme = `SEME${time}${randomPart}`;
+    const seme = `SEME${currency}${time}${randomPart}`;
     setGeneratedSEME(seme);
   };
 
