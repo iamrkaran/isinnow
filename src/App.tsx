@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ISINValidator } from "./components/ISINValidator";
 import { ISINGenerator } from "./components/ISINGenerator";
-import { SEMEGenerator } from "./components/SEMEGenerator";
+
 
 function App() {
   const [activeTab, setActiveTab] = useState("isin");
@@ -57,7 +57,7 @@ function App() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                <h2 className="text-lg font-semibold mb-4">SEME Generator</h2>
+                
 
                 
               </div>
