@@ -11,7 +11,7 @@ function App() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
           <p className="text-center  bg-gradient-to-r from-violet-600 to-indigo-600 text-transparent bg-clip-text font-semibold text-lg">
-            ISIN & SEME Tools
+            ISIN 
           </p>
         </div>
       </header>
@@ -59,7 +59,7 @@ function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                 <h2 className="text-lg font-semibold mb-4">SEME Generator</h2>
 
-                <SEMEGenerator />
+                
               </div>
             )}
           </div>
@@ -69,7 +69,7 @@ function App() {
       <footer className="bg-white border-t mt-auto">
         <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
           <p className="text-center  bg-gradient-to-r from-violet-600 to-indigo-600 text-transparent bg-clip-text font-semibold text-lg">
-            Created by @R.K
+            Created by @Arpit
           </p>
         </div>
       </footer>
