@@ -46,7 +46,7 @@ export const ISINGenerator: React.FC = () => {
             className="mt-1 w-full px-3 py-2 border rounded-md"
           >
             <option value="EQUITY">Equity</option>
-            <option value="BOND">Bond</option>
+            <option value="G">Bond</option>
             <option value="FUND">Fund</option>
             <option value="MONEY">MONEY MARKET</option>
           </select>
