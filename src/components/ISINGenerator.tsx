@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Wand2, Copy, Check } from 'lucide-react';
 import { generateISIN } from '../utils/isinValidator';
 
+
 export const ISINGenerator: React.FC = () => {
   const [countryCode, setCountryCode] = useState('US');
   const [securityType, setSecurityType] = useState('EQUITY');
@@ -29,27 +30,26 @@ export const ISINGenerator: React.FC = () => {
     <div className="w-full max-w-md space-y-4 ">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          {/* <label className="block text-sm font-medium text-gray-700">Country Code</label> */}
+        
           <input
             type="text"
             value={countryCode}
             onChange={(e) => setCountryCode(e.target.value.toUpperCase())}
-            className=" w-full px-3 py-2 border rounded-md"
+            className=" w-full px-3 py-2 border rounded-lg focus:border-blue-500 focus:outline-none"
             maxLength={2}
           />
         </div>
-        <div>
-          {/* <label className="block text-sm font-medium text-gray-700">Security Type</label> */}
+        <div >
           <select
             value={securityType}
             onChange={(e) => setSecurityType(e.target.value)}
-            className="mt-1 w-full px-3 py-2 border rounded-md"
+            className="mt-0 w-full px-3 py-2  border rounded-lg focus:border-blue-500 focus:outline-none"
           >
             <option value="EQUITY">Equity</option>
             <option value="G">Bond</option>
             <option value="FUND">Fund</option>
             <option value="MONEY">MONEY MARKET</option>
-          </select>
+          </select>  
         </div>
       </div>
       <button
@@ -63,7 +63,7 @@ export const ISINGenerator: React.FC = () => {
       {generatedISIN && (
         <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <div className="flex items-center justify-between">
-            <span className="font-medium text-blue-700">Generated ISIN</span>
+            <span className="font-medium text-blue-700">Generated Valid ISIN</span>
             <button
               onClick={handleCopy}
               className="flex items-center gap-1 text-gray-600 hover:text-gray-900"
